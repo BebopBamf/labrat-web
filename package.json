@@ -12,7 +12,7 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,vue}": [
-      "vue-tsc --noEmit",
+      "vue-tsc --noEmit --allowJs",
       "prettier --write --ignore-unknown"
     ]
   },
