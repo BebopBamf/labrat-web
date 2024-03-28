@@ -13,6 +13,10 @@
     "lint-staged": {
         "*.{js,ts,jsx,tsx,vue}": ["prettier --write --ignore-unknown"]
     },
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "all"
+    },
     "dependencies": {
         "vue": "^3.4.21",
         "vue-router": "^4.3.0"
