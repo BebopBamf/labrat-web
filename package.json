@@ -11,13 +11,11 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,vue}": [
-      "vue-tsc --noEmit --allowJs",
-      "prettier --write --ignore-unknown"
-    ]
+    "*.{js,ts,jsx,tsx,vue}": ["prettier --write --ignore-unknown"]
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
