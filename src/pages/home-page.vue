@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
+import HeroLeft from '../components/heros/hero-left.vue';
+
+import TeacherHero from '@images/teacher-hero.jpg';
+import StudentHero from '@images/student-hero.jpg';
+
 // Reactive state
 const count = ref<number>(0);
 
@@ -24,6 +29,26 @@ const decrement = () => {
             <button @click="increment">+</button>
         </div>
     </div>
+
+    <hero-left
+        title="For Teachers"
+        :img-src="TeacherHero"
+        img-alt=""
+        Teacher
+        teaching
+        class
+    >
+        Manage class activities, classrooms and many other features in the
+        teachers portal.
+    </hero-left>
+
+    <hero-left
+        title="For Students"
+        :img-src="StudentHero"
+        img-alt="Student taking class"
+    >
+        Participate in activities in the students portal.
+    </hero-left>
 </template>
 
 <style scoped>
