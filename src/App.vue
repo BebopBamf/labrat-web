@@ -1,6 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import HeaderNav from '@components/nav/header-nav.vue';
+</script>
 
 <template>
+    <header-nav />
+
     <p>Current route: {{ $route.fullPath }}</p>
 
     <main>
